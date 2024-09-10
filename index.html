@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Line Work</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <div id="large-header" class="large-header"><canvas id="demo-canvas" width="1894" height="1035"></canvas>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Line Work</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    /* Position the text and logo container at the bottom */
+    .bottom-content {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      z-index: 10;
+      /* Ensures the text and logo stay on top */
+    }
+
+    /* Style for the text */
+    .bottom-text {
+      color: white;
+      margin-bottom: 10px;
+      /* Space between text and logo */
+    }
+
+    /* Style for the logo */
+    .logo {
+      width: 100px;
+      /* Adjust size as needed */
+      height: 100px;
+      border-radius: 50%;
+      /* This makes the image circular */
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    /* Image inside the logo div */
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Ensures image covers the circular shape */
+    }
+
+    /* Canvas styling */
+    #large-header {
+      position: relative;
+      z-index: 1;
+      /* Lower index for the canvas */
+    }
+
+    canvas {
+      z-index: 1;
+      /* Ensure the canvas stays behind the text and logo */
+    }
+
+    /* Social icons */
+    .social-links {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10;
+    }
+
+    .social-links a {
+      color: white;
+      margin-left: 15px;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #0077b5;
+      /* LinkedIn blue or customize as needed */
+    }
+
+    .social-links a.email:hover {
+      color: #d14836;
+      /* Gmail red or customize */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas" width="1894" height="1035"></canvas>
+  </div>
+
+  <!-- Adding the text and logo at the bottom -->
+  <div class="bottom-content">
+    <div class="bottom-text">
+      <h1>&lt; building /&gt;</h1>
+      <p>Working day and night!</p>
+    </div>
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo">
+    </div>
+  </div>
+
+  <!-- Adding social links in the bottom right -->
+  <div class="social-links">
+    <!-- LinkedIn icon -->
+    <a href="https://www.linkedin.com/company/neuroforge-innovation/" target="_blank" class="linkedin" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <!-- Email icon -->
+    <a href="mailto:info@neuroforgeinnovation.com" class="email" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
