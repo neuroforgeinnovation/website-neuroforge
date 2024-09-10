@@ -1,0 +1,16 @@
+deployment:
+  branches:
+    - main
+  build:
+    commands:
+      - echo "Deploying application..."
+  artifacts:
+    include:
+      - css/**
+      - js/**
+      - scss/**
+      - CNAME
+      - index.html
+      - logo.jpg
+    exclude:
+      - Capture.PNG
